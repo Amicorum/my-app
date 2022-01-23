@@ -6,7 +6,7 @@ import store from '../../redux/store'
 import { liftNav } from '../../utils/liftNav';
 
 
-const Container = ({ value, lift, name }) => {
+const Container = ({ floorNr }) => {
    
 
   return (
@@ -14,8 +14,8 @@ const Container = ({ value, lift, name }) => {
       <div className="container-inner">
         <div className="container-main"/>
         <div className="container-arrows">
-          {name !== '6' && <Arrow onClick={(e) =>store.dispatch(elevate( liftNav(name, 'floorUp')))} className="arrowUp"/>}
-          {name!== '1' && <Arrow onClick={(e) =>store.dispatch(elevate( liftNav(name, 'floorUp')))} className="arrowDown"/>}
+          {floorNr !== '6' && <Arrow onClick={() =>store.dispatch(elevate( liftNav(floorNr, 'floorUp')))} className="arrowUp"/>}
+          {floorNr!== '1' && <Arrow onClick={() =>store.dispatch(elevate( liftNav(floorNr, 'floorUp')))} className="arrowDown"/>}
         </div>
       </div>
     </div>

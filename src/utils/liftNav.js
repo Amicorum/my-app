@@ -1,13 +1,5 @@
-const getElemName = (e) =>{
-    if (e?.target?.getAttribute('name') !== undefined) {
-      return e.target.getAttribute('name')
-    } else {
-      return e
-    }
-  }
-  
- const liftNav = (e, source) => {
-      let name = getElemName(e)
+const liftNav = (e, source) => {
+      let name = e
       switch (source) {
         case 'elevatorBtn':
           

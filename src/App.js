@@ -17,14 +17,14 @@ function App() {
         <div className="btn-holder">
           {
             liftData.map((lift, idx) => (
-              <Button key={idx} name={lift.name} value={lift.name} />
+              <Button key={idx} floorNr={lift.name} />
             ))
           }
         </div>
         <div className="ctn-holder">
           {
             liftData.map((lift, idx) => (
-              <Container key={`${lift.name}${idx}`} name={lift.name} value={lift.name} />
+              <Container key={`${lift.name}${idx}`} floorNr={lift.name} />
             ))
           }
           <Lift floor={state.floor} lastFloor={floor} />
