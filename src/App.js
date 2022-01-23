@@ -27,7 +27,7 @@ function App() {
               <Container key={`${lift.name}${idx}`} name={lift.name} value={lift.name} />
             ))
           }
-          <Lift lastFloor={floor} />
+          <Lift floor={state.floor} lastFloor={floor} />
         </div>
       </div>
     </div>

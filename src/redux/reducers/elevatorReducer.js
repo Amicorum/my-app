@@ -1,6 +1,5 @@
 import {
   CHANGE_FLOOR_FROM_ELEVATOR,
-  CHANGE_FLOOR_FROM_OUTSIDE
 } from '../types'
 
 const initialState = {

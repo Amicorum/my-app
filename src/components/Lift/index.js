@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { connect } from 'react-redux';
 import './lift.scss';
 
 const Lift = ({ floor, lastFloor }) => {
@@ -35,7 +34,6 @@ const Lift = ({ floor, lastFloor }) => {
 
 
   useEffect(() => {
-    console.log(floor,lastFloor);
     setTransitionTime(calcTransition(floor,lastFloor))
     const person = document.querySelector('.person');
     switch (floor) {
@@ -77,7 +75,4 @@ const Lift = ({ floor, lastFloor }) => {
     </div>
     )
 }
-const mapStateToProps = (state) => ({
-  floor: state.buttonReducer.floor,
-})
-export default connect(mapStateToProps)(Lift);
+export default Lift;
