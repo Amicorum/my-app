@@ -1,0 +1,37 @@
+.container-outer{
+  margin: 0;
+  padding: 0;
+  
+  
+  .container-inner{
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .container-main{
+        height: 20px;
+        padding: 20px !important;
+        background-color: #4ab;
+        margin: 10px 0 0 0;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 3px 2px 1px rgba(0,0,0,.3);
+    }
+    .container-arrows{
+      width: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 10px;
+      .arrowUp{
+        cursor: pointer;
+        transform: rotate(-180deg);
+        padding-bottom: 5px;
+      }
+      .arrowDown{
+        cursor: pointer;
+        padding-top: 5px;
+      }
+    }
+}
